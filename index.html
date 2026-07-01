@@ -1,11 +1,491 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartBudget</title>
-</head>
-<body>
-    
-</body>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SmartBudget | Inicio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+
+    <body class="site-body">
+        <a class="visually-hidden-focusable site-skip-link" href="#main-content">Saltar al contenido</a>
+        <header class="header sticky-top shadow-sm">
+            <nav class="navbar navbar-expand-lg header__navbar">
+                <div class="container">
+                    <a class="navbar-brand header__brand" href="./index.html">
+                        <span class="header__logo">SB</span>
+                        <span>SmartBudget</span>
+                    </a>
+
+                    <button class="navbar-toggler" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#mainNavbar"
+                        aria-controls="mainNavbar" 
+                        aria-expanded="false" 
+                        aria-label="Mostrar navegación"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="mainNavbar">
+                        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                            <li class="nav-item"><a class="nav-link header__link header__link--active"
+                                    href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header__link" href="./pages/dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header__link" href="./pages/movimientos.html">Movimientos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header__link" href="./pages/presupuestos.html">Presupuestos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header__link" href="./pages/reportes.html">Reportes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header__link" href="./pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+        <main id="main-content">
+            <section class="hero section-spacing">
+                <div class="container">
+                    <div class="row align-items-center g-4">
+                        <div class="col-lg-7">
+                            <span class="hero__badge badge rounded-pill text-bg-light">
+                                Gestión financiera moderna
+                            </span>
+
+                            <h1 class="hero__title">
+                                Controla tus finanzas con una interfaz clara, rápida y responsiva.
+                            </h1>
+
+                            <p class="hero__text">
+                                SmartBudget te ayuda a visualizar ingresos, gastos y metas mensuales desde una
+                                experiencia visual intuitiva, escalable y preparada para crecer como aplicación web
+                                completa.
+                            </p>
+
+                            <div class="d-flex flex-wrap gap-3 mt-4">
+                                <a class="btn button button--primary" href="./pages/dashboard.html">
+                                    Ver dashboard
+                                </a>
+
+                                <button class="btn button 
+                                    button--secondary" 
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#demoModal"
+                                >
+                                    Ver demo
+                                </button>
+                            </div>
+
+                            <div class="row g-3 mt-4">
+                                <div class="col-sm-4">
+                                    <article class="metric-card">
+                                        <span class="metric-card__label">
+                                            Ahorro proyectado
+                                        </span>
+                                        
+                                        <strong class="metric-card__value">
+                                            +24%
+                                        </strong>
+                                    </article>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <article class="metric-card">
+                                        <span class="metric-card__label">
+                                            Categorías activas
+                                        </span>
+
+                                        <strong class="metric-card__value">
+                                            12
+                                        </strong>
+                                    </article>
+                                </div>
+                                <div class="col-sm-4">
+                                    <article class="metric-card">
+                                        <span class="metric-card__label">
+                                            Alertas visibles
+                                        </span>
+
+                                        <strong class="metric-card__value">
+                                            3
+                                        </strong>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div id="heroCarousel" class="carousel slide hero__visual" data-bs-ride="carousel">
+                                <div class="carousel-inner dashboard-preview">
+                                    <div class="carousel-item active">
+                                        <div class="dashboard-preview__slide">
+                                            <div class="dashboard-preview__header">
+                                                <span>Saldo actual</span>
+                                                
+                                                <strong>$1.280.000</strong>
+                                            </div>
+                                            <div class="progress dashboard-preview__progress" 
+                                                role="progressbar"
+                                                aria-label="Meta de ahorro" 
+                                                aria-valuenow="72" 
+                                                aria-valuemin="0"
+                                                aria-valuemax="100">
+                                                
+                                                <div class="progress-bar" style="width:72%">72%</div>
+                                            </div>
+
+                                            <div class="dashboard-preview__list">
+                                                <p>
+                                                    <i class="bi bi-arrow-down-circle"></i> 
+                                                    Gastos hogar
+                                                </p>
+
+                                                <p>
+                                                    <i class="bi bi-arrow-up-circle"></i> 
+                                                    Ingreso principal
+                                                </p>
+
+                                                <p>
+                                                    <i class="bi bi-piggy-bank"></i> 
+                                                    Meta de viaje
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="dashboard-preview__slide">
+                                            <div class="dashboard-preview__header">
+                                                <span>Movimientos del mes</span>
+
+                                                <strong>38</strong>
+                                            </div>
+
+                                            <div class="alert alert-light dashboard-preview__alert mb-3" role="alert">
+                                                Presupuesto de alimentación en 82% del límite.
+                                            </div>
+
+                                            <div class="dashboard-preview__bars">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <button class="carousel-control-prev" 
+                                    type="button" 
+                                    data-bs-target="#heroCarousel"
+                                    data-bs-slide="prev">
+                                    
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    
+                                    <span  class="visually-hidden">Anterior</span>
+                                </button>
+                                
+                                <button class="carousel-control-next" 
+                                    type="button" 
+                                    data-bs-target="#heroCarousel"
+                                    data-bs-slide="next">
+                                    
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    
+                                    <span class="visually-hidden">Siguiente</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features section-spacing section-surface">
+                <div class="container">
+                    <div class="section-heading text-center">
+                        <p class="section-heading__eyebrow">Beneficios</p>
+                        
+                        <h2 class="section-heading__title">
+                            Componentes reutilizables para una experiencia financiera completa.
+                        </h2>
+                    </div>
+
+                    <div class="row g-4 mt-2">
+                        <div class="col-md-6 col-xl-3">
+                            <article class="feature-card h-100">
+                                <i class="bi bi-grid-1x2-fill feature-card__icon"></i>
+                                
+                                <h3 class="feature-card__title">Dashboard visual</h3>
+                                
+                                <p class="feature-card__text">
+                                    Resumen rápido de gastos, ingresos, metas y alertas mediante tarjetas y barras de progreso.
+                                </p>
+                            </article>
+                        </div>
+
+                        <div class="col-md-6 col-xl-3">
+                            <article class="feature-card h-100">
+                                <i class="bi bi-arrow-left-right feature-card__icon"></i>
+                                
+                                <h3 class="feature-card__title">Movimientos ordenados</h3>
+                                
+                                <p class="feature-card__text">
+                                    Tabla responsiva con filtros, buscador y modal para agregar registros financieros.
+                                </p>
+                            </article>
+                        </div>
+
+                        <div class="col-md-6 col-xl-3">
+                            <article class="feature-card h-100">
+                                <i class="bi bi-bar-chart-line-fill feature-card__icon"></i>
+                                
+                                <h3 class="feature-card__title">Reportes claros</h3>
+                                
+                                <p class="feature-card__text">
+                                    Indicadores y visualizaciones preparadas para interpretar el comportamiento mensual.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <article class="feature-card h-100"><i class="bi bi-chat-dots-fill feature-card__icon"></i>
+                                <h3 class="feature-card__title">Soporte cercano</h3>
+                                
+                                <p class="feature-card__text">
+                                    Formulario de contacto y secciones navegables para mejorar la atención al usuario.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="plans section-spacing">
+                <div class="container">
+                    <div class="row g-4 align-items-stretch">
+                        <div class="col-lg-4">
+                            <div class="section-heading section-heading--left">
+                                <p class="section-heading__eyebrow">Planes</p>
+
+                                <h2 class="section-heading__title">
+                                    Una propuesta moderna con colores llamativos y enfoque fintech.
+                                </h2>
+                                <p class="section-heading__text">
+                                    Se integran contenedores, filas, columnas, cards, badges, accordion, modal, carousel, offcanvas, toast y formularios.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-8">
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <article class="pricing-card h-100">
+                                        <span class="badge rounded-pill pricing-card__badge">Starter</span>
+                                        
+                                        <h3 class="pricing-card__title">Visualización básica</h3>
+
+                                        <p class="pricing-card__price">$0</p>
+
+                                        <ul class="pricing-card__list list-unstyled">
+                                            <li>Dashboard general</li>
+                                            <li>Tabla de movimientos</li>
+                                            <li>Formulario de contacto</li>
+                                        </ul>
+                                    </article>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <article class="pricing-card pricing-card--featured h-100">
+                                        <span class="badge rounded-pill pricing-card__badge">Recomendado</span>
+                                        
+                                        <h3 class="pricing-card__title">Smart control</h3>
+                                        
+                                        <p class="pricing-card__price">$7.990</p>
+                                        
+                                        <ul class="pricing-card__list list-unstyled">
+                                            <li>Presupuestos por categoría</li>
+                                            <li>Alertas personalizadas</li>
+                                            <li>Indicadores destacados</li>
+                                        </ul>
+                                    </article>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <article class="pricing-card h-100">
+                                        <span class="badge rounded-pill pricing-card__badge">Pro</span>
+
+                                        <h3 class="pricing-card__title">Análisis avanzado</h3>
+
+                                        <p class="pricing-card__price">$12.990</p>
+
+                                        <ul class="pricing-card__list list-unstyled">
+                                            <li>Reportes más completos</li>
+                                            <li>Seguimiento de metas</li>
+                                            <li>Prioridad en soporte</li>
+                                        </ul>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials section-spacing section-surface">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <article class="quote-card h-100">
+                                <span class="quote-card__tag">Testimonio</span>
+
+                                <blockquote class="quote-card__text">
+                                    “La interfaz transmite orden y claridad. Cada sección está pensada para navegar rápido entre resúmenes, movimientos y presupuestos.”
+                                </blockquote>
+
+                                <p class="quote-card__author">Equipo de Producto SmartBudget</p>
+                            </article>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="accordion faq" id="faqAccordion">
+                                <div class="accordion-item faq__item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button 
+                                            faq__button" type="button"
+                                            data-bs-toggle="collapse" 
+                                            data-bs-target="#faqOne" 
+                                            aria-expanded="true"
+                                            aria-controls="faqOne">
+                                            
+                                            ¿Qué páginas incluye el proyecto?
+                                        </button>
+                                    </h2>
+
+                                    <div id="faqOne" 
+                                        class="accordion-collapse collapse show"
+                                        data-bs-parent="#faqAccordion">
+                                        
+                                        <div class="accordion-body">
+                                            Inicio, dashboard, movimientos, presupuestos, reportes y contacto, todas conectadas mediante navegación.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item faq__item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed faq__button"
+                                            type="button" 
+                                            data-bs-toggle="collapse" 
+                                            data-bs-target="#faqTwo"
+                                            aria-expanded="false" 
+                                            aria-controls="faqTwo">
+                                            
+                                            ¿Se usó Bootstrap en la maqueta?
+                                        </button>
+                                    </h2>
+
+                                    <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            Sí, se incorporan utilidades de grid, navbar, accordion, modal, cards,
+                                            tabla, formulario, offcanvas, badges, progress y toast.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item faq__item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed faq__button"
+                                            type="button" 
+                                            data-bs-toggle="collapse" 
+                                            data-bs-target="#faqThree"
+                                            aria-expanded="false" 
+                                            aria-controls="faqThree">
+                                            
+                                            ¿La estructura está pensada para crecer?
+                                        </button>
+                                    </h2>
+
+                                    <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            Sí, se agregó organización BEM y una estructura SASS 7-1 para modularizar
+                                            estilos y facilitar nuevas pantallas.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer py-4">
+            <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center gap-3">
+                <p class="footer__text mb-0">
+                    Proyecto académico SmartBudget · HTML5, BEM, SASS 7-1 y Bootstrap.
+                </p>
+
+                <div class="footer__social d-flex gap-3">
+                    <a href="./pages/contacto.html" class="footer__link">Contacto</a>
+                    <a href="./pages/reportes.html" class="footer__link">Reportes</a>
+                </div>
+            </div>
+        </footer>
+
+        <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content custom-modal">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="demoModalLabel">
+                            Vista rápida del proyecto
+                        </h2>
+                        
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Esta maqueta integra páginas navegables, componentes de Bootstrap y una base preparada para
+                            evolucionar a una aplicación financiera completa.
+                        </p>
+
+                        <div class="alert alert-success mb-0" role="alert">
+                            Incluye navegación, dashboard, tablas, cards, formularios y componentes interactivos.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="position-fixed bottom-0 end-0 p-3 toast-zone">
+            <div id="mainToast" class="toast border-0 custom-toast" role="status" aria-live="polite" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">SmartBudget</strong>
+                    
+                    <small>Ahora</small>
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Cerrar"></button>
+                </div>
+                <div class="toast-body">
+                    Proyecto cargado correctamente con navegación y estilos personalizados.
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+
 </html>
