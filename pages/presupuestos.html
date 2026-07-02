@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartBudget | Presupuestos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg menu">
+            <div class="container">
+                <a class="navbar-brand logo" href="../index.html">SmartBudget</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                    aria-controls="navbarMain" aria-expanded="false" aria-label="Mostrar navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav ms-auto menu__list">
+                        <li class="nav-item"><a class="nav-link menu__link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link menu__link" href="./dashboard.html">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link menu__link" href="./movimientos.html">Movimientos</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link menu__link menu__link--active"
+                                href="./presupuestos.html">Presupuestos</a></li>
+                        <li class="nav-item"><a class="nav-link menu__link" href="./reportes.html">Reportes</a></li>
+                        <li class="nav-item"><a class="nav-link menu__link" href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page py-5">
+        <div class="container">
+            <div class="page-head">
+                <h1>Presupuestos</h1>
+                <button class="btn btn-main" data-bs-toggle="modal" data-bs-target="#presupuestoModal">
+                    Crear presupuesto
+                </button>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-xl-4">
+                    <article class="card-box h-100">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="mb-0">Hogar</h3>
+                            <span class="badge bg-primary">Activo</span>
+                        </div>
+                        <p class="mb-2">Usado: $320.000 de $410.000</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" style="width: 78%;">78%</div>
+                        </div>
+                        <button class="btn btn-outline-main w-100">Editar</button>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <article class="card-box h-100">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="mb-0">Transporte</h3>
+                            <span class="badge bg-success">Estable</span>
+                        </div>
+                        <p class="mb-2">Usado: $120.000 de $200.000</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-success" style="width: 60%;">60%</div>
+                        </div>
+                        <button class="btn btn-outline-main w-100">Editar</button>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <article class="card-box h-100">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="mb-0">Ocio</h3>
+                            <span class="badge bg-warning text-dark">Alerta</span>
+                        </div>
+                        <p class="mb-2">Usado: $180.000 de $220.000</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-warning text-dark" style="width: 82%;">82%</div>
+                        </div>
+                        <button class="btn btn-outline-main w-100">Editar</button>
+                    </article>
+                </div>
+            </div>
+
+            <div class="content-panel mt-4">
+                <h2 class="mb-3">Resumen general</h2>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="p-3 border rounded bg-light h-100">
+                            <h3 class="h6">Presupuestos activos</h3>
+                            <strong>6 categorías</strong>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-3 border rounded bg-light h-100">
+                            <h3 class="h6">Categoría con mayor uso</h3>
+                            <strong>Ocio</strong>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-3 border rounded bg-light h-100">
+                            <h3 class="h6">Estado mensual</h3>
+                            <strong>Controlado</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="presupuestoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-main">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5">Nuevo presupuesto</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3">
+                        <div class="col-12">
+                            <label for="categoria" class="form-label">Categoría</label>
+                            <input type="text" class="form-control" id="categoria" placeholder="Ej: Alimentación">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="limite" class="form-label">Límite mensual</label>
+                            <input type="number" class="form-control" id="limite" placeholder="Ej: 250000">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="descripcion" class="form-label">Descripción</label>
+                            <textarea class="form-control" id="descripcion" rows="3"
+                                placeholder="Detalle del presupuesto"></textarea>
+                        </div>
+
+                        <div class="col-12">
+                            <button type="button" class="btn btn-main w-100" data-bs-dismiss="modal">
+                                Guardar presupuesto
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
