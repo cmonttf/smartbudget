@@ -1,0 +1,18 @@
+@use '../abstracts/variables';
+
+header {
+    background-color: variables.$color-principal;
+    padding: 1rem;
+
+    .logo .menu-link {
+        color: white;
+    }
+
+    .menu-list {
+        gap: .5rem;
+    }
+
+    .menu-link-active .menu-link:hover {
+        color: variables.$color-fondo;
+    }
+}
