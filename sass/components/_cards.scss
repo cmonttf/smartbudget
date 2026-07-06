@@ -1,0 +1,73 @@
+@use '../abstracts/mixins';
+
+.preview-card,
+.card-box,
+.plan-card,
+.content-panel,
+.page-head {
+    @include mixins.card();
+}
+
+.card-box {
+    @include mixins.card-flex();
+
+    i {
+        @include mixins.card-icon();
+    }
+
+    h3 {
+        @include mixins.card-title();
+    }
+
+    strong {
+        @include mixins.card-value();
+    }
+}
+
+.plan-card {
+    h3 {
+        @include mixins.card-title();
+    }
+}
+
+.page-head {
+    h1 {
+        @include mixins.card-title();
+    }
+}
+
+.content-panel {
+    h2 {
+        @include mixins.card-title();
+    }
+}
+
+.preview-card-panel {
+    h2 {
+        @include mixins.card-title();
+    }
+
+    strong {
+        @include mixins.card-value();
+    }
+}
+
+.section-copy {
+    h2 {
+        @include mixins.card-title();
+    }
+}
+
+.plan-card {
+    .badge {
+        @include mixins.card-badge();
+    }
+
+    &-featured {
+        @include mixins.featured-card();
+
+        .badge {
+            @include mixins.card-badge(white, $color-main);
+        }
+    }
+}
