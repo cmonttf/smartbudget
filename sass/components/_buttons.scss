@@ -1,0 +1,10 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+.btn-main {
+    @include maxins.boton(variables.$color-principal);
+}
+
+.btn-outline-main {
+    @include maxins.boton(variables.$color-principal);
+}
