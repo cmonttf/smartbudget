@@ -2,178 +2,195 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SmartBudget | Inicio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartBudget | Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-  <header class="header">
-    <nav class="navbar navbar-expand-lg menu">
-      <div class="container">
-        <a class="navbar-brand logo" href="./index.html">SmartBudget</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
-          aria-controls="navbarMain" aria-expanded="false" aria-label="Mostrar navegación">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarMain">
-          <ul class="navbar-nav ms-auto menu__list">
-            <li class="nav-item"><a class="nav-link menu__link menu__link--active" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link menu__link" href="pages/dashboard.html">Dashboard</a></li>
-            <li class="nav-item"><a class="nav-link menu__link" href="pages/movimientos.html">Movimientos</a></li>
-            <li class="nav-item"><a class="nav-link menu__link" href="pages/presupuestos.html">Presupuestos</a></li>
-            <li class="nav-item"><a class="nav-link menu__link" href="pages/reportes.html">Reportes</a></li>
-            <li class="nav-item"><a class="nav-link menu__link" href="pages/contacto.html">Contacto</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero py-5">
-      <div class="container">
-        <div class="row align-items-center g-4">
-          <div class="col-lg-7">
-            <span class="hero__badge badge rounded-pill">Finanzas personales</span>
-            <h1 class="hero__title">Organiza tu dinero con una interfaz clara, moderna y responsiva.</h1>
-            <p class="hero__text">Centraliza tus ingresos, gastos y metas de ahorro en una plataforma pensada para
-              facilitar la toma de decisiones y entregar una visión ordenada de tus finanzas personales.</p>
-            <div class="d-flex flex-wrap gap-3 mt-4">
-              <a class="btn btn-main" href="./pages/dashboard.html">Ir al dashboard</a>
-              <button class="btn btn-outline-main" data-bs-toggle="modal" data-bs-target="#inicioModal">Ver
-                resumen</button>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg menu">
+            <div class="container">
+                <a class="navbar-brand logo" href="./index.html">SmartBudget</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                    aria-controls="navbarMain" aria-expanded="false" aria-label="Mostrar navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav ms-auto menu-list">
+                        <li class="nav-item"><a class="nav-link menu-link menu-link-active" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link menu-link" href="pages/dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link menu-link" href="pages/movimientos.html">Movimientos</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link menu-link"
+                                href="pages/presupuestos.html">Presupuestos</a></li>
+                        <li class="nav-item"><a class="nav-link menu-link" href="pages/reportes.html">Reportes</a></li>
+                        <li class="nav-item"><a class="nav-link menu-link" href="pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
             </div>
-          </div>
-          <div class="col-lg-5">
-            <div id="heroCarousel" class="carousel slide preview-card" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="preview-card__panel">
-                    <h2>Saldo disponible</h2>
-                    <strong>$1.280.000</strong>
-                    <div class="progress mt-3">
-                      <div class="progress-bar" style="width:72%">72%</div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero py-5">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-7">
+                        <span class="hero-badge badge rounded-pill">Finanzas personales</span>
+                        <h1 class="hero-title">Organiza tu dinero con una interfaz clara, moderna y responsiva.</h1>
+                        <p class="hero-text">Centraliza tus ingresos, gastos y metas de ahorro en una plataforma pensada
+                            para
+                            facilitar la toma de decisiones y entregar una visión ordenada de tus finanzas personales.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3 mt-4">
+                            <a class="btn btn-main" href="./pages/dashboard.html">Ir al dashboard</a>
+                            <button class="btn btn-outline-main" data-bs-toggle="modal"
+                                data-bs-target="#inicioModal">Ver
+                                resumen</button>
+                        </div>
                     </div>
-                  </div>
+                    <div class="col-lg-5">
+                        <div id="heroCarousel" class="carousel slide preview-card" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="preview-card-panel">
+                                        <h2>Saldo disponible</h2>
+                                        <strong>$1.280.000</strong>
+                                        <div class="progress mt-3">
+                                            <div class="progress-bar" style="width:72%">72%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="preview-card-panel">
+                                        <h2>Movimientos del mes</h2>
+                                        <strong>38 registros</strong>
+                                        <div class="alert alert-light mt-3 mb-0">La categoría hogar presenta un avance
+                                            del 78% del
+                                            presupuesto asignado.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                  <div class="preview-card__panel">
-                    <h2>Movimientos del mes</h2>
-                    <strong>38 registros</strong>
-                    <div class="alert alert-light mt-3 mb-0">La categoría hogar presenta un avance del 78% del
-                      presupuesto asignado.</div>
-                  </div>
+            </div>
+        </section>
+
+        <section class="features py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-6 col-xl-3">
+                        <article class="card-box"><i class="bi bi-grid"></i>
+                            <h3>Panel principal</h3>
+                            <p>Accede a un resumen ejecutivo con indicadores clave, saldos destacados y accesos directos
+                                a las
+                                funciones más utilizadas.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <article class="card-box"><i class="bi bi-arrow-left-right"></i>
+                            <h3>Movimientos</h3>
+                            <p>Administra ingresos y egresos mediante una vista ordenada, con filtros prácticos y
+                                registro rápido de
+                                nuevas operaciones.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <article class="card-box"><i class="bi bi-pie-chart"></i>
+                            <h3>Presupuestos</h3>
+                            <p>Supervisa el comportamiento de cada categoría con límites definidos, porcentajes de uso y
+                                alertas
+                                visuales de seguimiento.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <article class="card-box"><i class="bi bi-envelope"></i>
+                            <h3>Contacto</h3>
+                            <p>Canaliza consultas, solicitudes y observaciones a través de un formulario integrado con
+                                información de
+                                soporte disponible.</p>
+                        </article>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <section class="features py-5">
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-md-6 col-xl-3">
-            <article class="card-box"><i class="bi bi-grid"></i>
-              <h3>Panel principal</h3>
-              <p>Accede a un resumen ejecutivo con indicadores clave, saldos destacados y accesos directos a las
-                funciones más utilizadas.</p>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-3">
-            <article class="card-box"><i class="bi bi-arrow-left-right"></i>
-              <h3>Movimientos</h3>
-              <p>Administra ingresos y egresos mediante una vista ordenada, con filtros prácticos y registro rápido de
-                nuevas operaciones.</p>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-3">
-            <article class="card-box"><i class="bi bi-pie-chart"></i>
-              <h3>Presupuestos</h3>
-              <p>Supervisa el comportamiento de cada categoría con límites definidos, porcentajes de uso y alertas
-                visuales de seguimiento.</p>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-3">
-            <article class="card-box"><i class="bi bi-envelope"></i>
-              <h3>Contacto</h3>
-              <p>Canaliza consultas, solicitudes y observaciones a través de un formulario integrado con información de
-                soporte disponible.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="plans py-5">
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-lg-4">
-            <div class="section-copy">
-              <h2>Gestión financiera eficiente</h2>
-              <p>SmartBudget reúne herramientas visuales y operativas para facilitar el control de gastos, la
-                planificación mensual y el seguimiento de objetivos personales.</p>
+        <section class="plans py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="section-copy">
+                            <h2>Gestión financiera eficiente</h2>
+                            <p>SmartBudget reúne herramientas visuales y operativas para facilitar el control de gastos,
+                                la
+                                planificación mensual y el seguimiento de objetivos personales.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <article class="plan-card"><span class="badge rounded-pill">Base</span>
+                                    <h3>Landing</h3>
+                                    <p>Presentación general del servicio, propuesta de valor y acceso rápido a las
+                                        secciones principales.
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="col-md-4">
+                                <article class="plan-card plan-card-featured"><span
+                                        class="badge rounded-pill">Completo</span>
+                                    <h3>Navegable</h3>
+                                    <p>Experiencia conectada entre dashboard, presupuestos, reportes, movimientos y
+                                        contacto.</p>
+                                </article>
+                            </div>
+                            <div class="col-md-4">
+                                <article class="plan-card"><span class="badge rounded-pill">Extra</span>
+                                    <h3>Bootstrap</h3>
+                                    <p>Interfaz enriquecida con componentes visuales que mejoran la usabilidad y la
+                                        consistencia del
+                                        sitio.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-lg-8">
-            <div class="row g-4">
-              <div class="col-md-4">
-                <article class="plan-card"><span class="badge rounded-pill">Base</span>
-                  <h3>Landing</h3>
-                  <p>Presentación general del servicio, propuesta de valor y acceso rápido a las secciones principales.
-                  </p>
-                </article>
-              </div>
-              <div class="col-md-4">
-                <article class="plan-card plan-card--featured"><span class="badge rounded-pill">Completo</span>
-                  <h3>Navegable</h3>
-                  <p>Experiencia conectada entre dashboard, presupuestos, reportes, movimientos y contacto.</p>
-                </article>
-              </div>
-              <div class="col-md-4">
-                <article class="plan-card"><span class="badge rounded-pill">Extra</span>
-                  <h3>Bootstrap</h3>
-                  <p>Interfaz enriquecida con componentes visuales que mejoran la usabilidad y la consistencia del
-                    sitio.</p>
-                </article>
-              </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>SmartBudget · Plataforma web para la visualización y gestión de finanzas personales.</p>
+    </footer>
+
+    <div class="modal fade" id="inicioModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-main">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5">Resumen del sitio</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Explora una experiencia enfocada en el control financiero, con herramientas visuales para revisar
+                        movimientos, planificar presupuestos y consultar indicadores relevantes.</p>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>SmartBudget · Plataforma web para la visualización y gestión de finanzas personales.</p>
-  </footer>
-
-  <div class="modal fade" id="inicioModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content modal-main">
-        <div class="modal-header">
-          <h2 class="modal-title fs-5">Resumen del sitio</h2>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-        </div>
-        <div class="modal-body">
-          <p>Explora una experiencia enfocada en el control financiero, con herramientas visuales para revisar
-            movimientos, planificar presupuestos y consultar indicadores relevantes.</p>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
