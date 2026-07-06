@@ -1,5 +1,11 @@
 @use 'abstracts/mixins';
 @use 'abstracts/variables';
 @use 'components/buttons';
+@use 'components/cards';
+@use 'components/modals';
+@use 'components/progress';
+@use 'components/accordion';
 @use 'layouts/header';
 @use 'layouts/footer';
+@use 'layouts/body';
+@use 'layouts/main';
