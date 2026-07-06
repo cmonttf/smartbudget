@@ -1,6 +1,6 @@
 @use '../abstracts/variables';
 
-hero {
+.hero {
     background: linear-gradient(125deg, variables.$color-principal, variables.$color-principal-light);
     color: white;
 
