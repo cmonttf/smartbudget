@@ -1,8 +1,8 @@
 @use '../abstracts/variables';
 
 footer {
-  text-align: center;
-  background-color: variables.$color-fondo-footer;
-  padding: 1rem;
-  font-size: .8rem;
+    text-align: center;
+    background-color: variables.$color-fondo-footer;
+    padding: 1rem;
+    font-size: .8rem;
 }
