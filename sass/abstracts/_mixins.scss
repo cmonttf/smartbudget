@@ -1,13 +1,4 @@
 @use 'sass:color';
-@use 'sass:outline';
-@use 'sass:padding';
-@use 'sass:height';
-@use 'sass:backgroud';
-@use 'sass:start-color';
-@use 'sass:end-color';
-@use 'sass:radius';
-@use 'sass:border';
-@use 'sass:background';
 @use '../abstracts/variables';
 
 /** BOTON */
@@ -87,7 +78,7 @@
     $color: variables.$color-principal
 ) {
     background: $background;
-    color: $color;
+    color: $color !important;
 }
 
 /** PROGRESS */
@@ -115,7 +106,7 @@
 
 @mixin accordion-active(
     $background: #efe9f8,
-    $color: $color-main
+    $color: variables.$color-principal
 ) {
     background: $background;
     color: $color;
