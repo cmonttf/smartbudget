@@ -1,0 +1,10 @@
+@use '../abstracts/mixins';
+@use '../abstracts/variables';
+
+.progress {
+    @include mixins.progress();
+}
+
+.progress-bar {
+    @include mixins.progress-bar(variables.$color-principal, variables.$color-acento);
+}
