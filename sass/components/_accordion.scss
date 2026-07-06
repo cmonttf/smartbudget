@@ -1,0 +1,7 @@
+@use '../abstracts/mixins';
+
+.accordion-button {
+    &:not(.collapsed) {
+        @include mixins.accordion-active();
+    }
+}
