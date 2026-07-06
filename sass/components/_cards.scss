@@ -1,4 +1,5 @@
 @use '../abstracts/mixins';
+@use '../abstracts/variables';
 
 .preview-card,
 .card-box,
@@ -67,7 +68,7 @@
         @include mixins.featured-card();
 
         .badge {
-            @include mixins.card-badge(white, $color-main);
+            @include mixins.card-badge(white, variables.$color-principal);
         }
     }
 }
