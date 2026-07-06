@@ -15,4 +15,8 @@ header {
     .menu-link-active .menu-link:hover {
         color: variables.$color-fondo;
     }
+
+    a {
+        color: white !important;
+    }
 }
