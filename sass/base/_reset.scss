@@ -3,3 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@media (max-width: 768px) {
+    .page-head {
+        padding: 1rem;
+    }
+
+    .preview-card,
+    .card-box,
+    .plan-card,
+    .content-panel {
+        padding: 1.25rem;
+    }
+}
